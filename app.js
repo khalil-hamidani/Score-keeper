@@ -10,6 +10,10 @@ let max = 3,
   player2Score = 0;
 playTo.addEventListener("change", () => {
   max = playTo.value;
+  player1Score = 0;
+  player2Score = 0;
+  player1.innerText = `${player1Score}`;
+  player2.innerText = `${player2Score}`;
 });
 //! player 1 update score
 p1Button.addEventListener("click", () => {
